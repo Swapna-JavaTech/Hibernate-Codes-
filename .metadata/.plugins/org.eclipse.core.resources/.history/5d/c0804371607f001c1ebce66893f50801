@@ -1,0 +1,6 @@
+package com.mouritech.onetooneexample.model;
+
+@En
+public class Instructor {
+
+}

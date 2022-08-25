@@ -1,0 +1,15 @@
+package com.mouritech.crudwithhibernate.dao;
+
+public class EmployeeDao {
+
+	public void employeeSave() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void getAllEmployees() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

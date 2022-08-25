@@ -1,0 +1,52 @@
+package com.mouritech.employeemanagement.web;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.mouritech.employeemanagement.dao.EmployeeDao;
+
+/**
+ * Servlet implementation class EmployeeServlet
+ */
+
+public class EmployeeServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	
+	private EmployeeDao empDao;
+	
+	public void init() {
+		empDao = new EmployeeDao();
+	}
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String action = req.getServletPath();
+		
+		try {
+			
+			switch (action) {
+			case "/new":
+				
+				break;
+			case "/list":
+				
+				break;
+			case "/update" :
+				
+				break;
+			case "/edit":
+			break;
+			default:
+				break;
+			}
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

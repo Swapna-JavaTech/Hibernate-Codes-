@@ -1,0 +1,18 @@
+package com.mouritech.crudwithhibernate.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.Generated;
+
+@Entity
+@Table(name = "employee_info")
+public class Employee {
+	
+	@Id
+	@GeneratedValue(gene)
+	private Long empId;
+
+}

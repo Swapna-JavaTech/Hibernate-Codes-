@@ -1,0 +1,10 @@
+package com.mouritech.crudwithhibernate.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "employee_info")
+public class Employee {
+
+}

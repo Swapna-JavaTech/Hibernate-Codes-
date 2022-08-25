@@ -1,0 +1,5 @@
+package com.mouritech.crudwithhibernate.dao;
+
+public class EmployeeDetailsDao {
+
+}

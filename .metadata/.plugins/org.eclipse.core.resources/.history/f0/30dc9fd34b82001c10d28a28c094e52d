@@ -1,0 +1,11 @@
+package com.mouritech.employeemanagement.web;
+
+import javax.servlet.http.HttpServlet;
+
+/**
+ * Servlet implementation class EmployeeServlet
+ */
+public class EmployeeServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+}

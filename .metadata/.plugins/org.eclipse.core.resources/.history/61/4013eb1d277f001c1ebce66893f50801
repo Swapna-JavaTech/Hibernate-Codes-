@@ -1,0 +1,5 @@
+package com.mouritech.crudwithhibernate.service;
+
+public class EmployeeService {
+
+}

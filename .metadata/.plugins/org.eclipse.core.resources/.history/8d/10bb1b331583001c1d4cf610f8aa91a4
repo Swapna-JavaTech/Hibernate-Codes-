@@ -1,0 +1,11 @@
+package com.mouritech.hibernateinheritanceexample.entity;
+
+@E
+public class PermanentEmployee extends Employee {
+	
+	private String designation;
+	private String department;
+	
+	
+
+}

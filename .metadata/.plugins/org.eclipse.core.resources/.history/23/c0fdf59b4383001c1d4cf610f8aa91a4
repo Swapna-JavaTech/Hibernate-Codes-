@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Appenders>
+	 <!-- Console Appender -->
+	 <Console name="console" target="SYSTEM_OUT">
+	 	<PatternLayout pattern = "%d{yyyy-MMM-dd HH:mm:ss a}"></PatternLayout>
+	 </Console>
+	</Appenders>
+</Configuration>

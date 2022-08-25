@@ -1,0 +1,28 @@
+package com.mouritech.onetooneexample.util;
+
+import java.util.Properties;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.cfg.Environment;
+
+public class HibernateUtil {
+	
+	private static SessionFactory sessionFactory;
+	
+	public static SessionFactory getSessionFactory() {
+		if(sessionFactory == null) {
+			try {
+				Configuration cfg = new Configuration();
+				
+				//Hibernate settings equivalent to hibernate.cfg.xml properties
+				Properties settings = new Properties();
+				settings.put(Environment.DRIVER, "")
+				
+			}catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

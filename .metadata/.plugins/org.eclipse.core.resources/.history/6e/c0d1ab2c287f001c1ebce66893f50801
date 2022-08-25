@@ -1,0 +1,18 @@
+package com.mouritech.crudwithhibernate.dao;
+
+import org.hibernate.Transaction;
+
+public class EmployeeDao {
+
+	
+	public void employeeSave() {
+		Transaction transaction = null;
+		
+	}
+
+	public void getAllEmployees() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

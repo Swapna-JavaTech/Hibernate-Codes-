@@ -1,0 +1,27 @@
+package com.mouritech.criteriaqueryexample;
+
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.criterion.Criterion;
+
+import com.mouritech.criteriaqueryexample.model.Product;
+
+public class CriteriaQueryExample {
+
+	@SuppressWarnings("deprecation")
+	public static void main(String[] args) {
+
+		Configuration cfg = new Configuration();
+		cfg.configure("hibernate.cfg.xml");
+		SessionFactory sFactory = cfg.buildSessionFactory();
+		Session session = sFactory.openSession();
+		
+
+		Criteria crit = session.createCriteria(Product.class);
+		Criterion cn = crit.createCriteria()
+
+	}
+
+}

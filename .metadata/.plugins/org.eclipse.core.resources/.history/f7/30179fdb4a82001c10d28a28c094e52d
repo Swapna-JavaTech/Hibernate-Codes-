@@ -1,0 +1,5 @@
+package com.mouritech.employeemanagement.entity;
+
+public class Employee {
+
+}

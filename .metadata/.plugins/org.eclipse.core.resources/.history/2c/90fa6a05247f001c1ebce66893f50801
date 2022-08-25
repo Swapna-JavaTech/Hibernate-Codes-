@@ -1,0 +1,6 @@
+package com.mouritech.crudwithhibernate.entity;
+
+@En
+public class Employee {
+
+}

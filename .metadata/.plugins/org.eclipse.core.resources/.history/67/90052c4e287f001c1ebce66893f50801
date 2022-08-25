@@ -1,0 +1,31 @@
+package com.mouritech.crudwithhibernate.dao;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.mouritech.crudwithhibernate.util.HibernateUtil;
+
+
+
+public class EmployeeDao {
+
+	
+	public void employeeSave() {
+		Transaction transaction = null;
+		try (Session session = HibernateUtil.getSessionFactory().openSession()) {
+			
+		}catch (Exception e) {
+			if (transaction != null) {
+				transaction.rollback();
+			}
+
+			e.printStackTrace();
+		}
+	}
+
+	public void getAllEmployees() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

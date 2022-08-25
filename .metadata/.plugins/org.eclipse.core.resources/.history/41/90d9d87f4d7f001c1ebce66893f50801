@@ -1,0 +1,5 @@
+package com.mouritech.criteriaqueryexample.model;
+
+public class Product {
+
+}

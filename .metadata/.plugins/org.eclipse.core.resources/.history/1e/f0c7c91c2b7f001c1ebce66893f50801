@@ -1,0 +1,51 @@
+package com.mouritech.crudwithhibernate.dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.mouritech.crudwithhibernate.entity.Employee;
+import com.mouritech.crudwithhibernate.util.HibernateUtil;
+
+
+
+
+public class EmployeeDao {
+
+	
+	public void employeeSave(Employee emp) {
+		Transaction transaction = null;
+		try (Session session = HibernateUtil.getSessionFactory().openSession()) {
+			
+			// start the transaction
+			transaction = session.beginTransaction();
+			// save the employee object in to database
+			session.save(emp);
+			// commit transaction
+			transaction.commit();
+		}catch (Exception e) {
+			if (transaction != null) {
+				transaction.rollback();
+			}
+
+			e.printStackTrace();
+		}
+	}
+
+	public void getAllEmployees() {
+		// retrieve the data from database to java program using hibernate
+		Transaction transaction = null;
+				try (Session session = HibernateUtil.getSessionFactory().openSession()) {
+
+					List<Employee> employeeList = session.createQuery("from Employee", Employee.class).list();
+					employeeList.forEach(stud -> System.out.println(stud));
+
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				
+		
+	}
+
+}

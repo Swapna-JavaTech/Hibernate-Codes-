@@ -1,0 +1,17 @@
+package com.mouritech.crudwithhibernate.service;
+
+public class EmployeeService {
+
+	public void employeeSave() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void getAllEmployees() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

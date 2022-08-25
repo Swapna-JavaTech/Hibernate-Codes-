@@ -1,0 +1,26 @@
+package com.mouritech.crudwithhibernate.service;
+
+import java.util.Scanner;
+
+import com.mouritech.crudwithhibernate.dao.EmployeeDao;
+
+public class EmployeeService {
+	Scanner sc = new Scanner(System.in);
+	EmployeeDao empdao = new EmployeeDao();
+
+	public void employeeSave() {
+		System.out.println("Enter the details of the employee");
+		
+		empdao.employeeSave();
+		
+		
+	}
+
+	public void getAllEmployees() {
+		
+		empdao.getAllEmployees();
+	}
+	
+	
+
+}

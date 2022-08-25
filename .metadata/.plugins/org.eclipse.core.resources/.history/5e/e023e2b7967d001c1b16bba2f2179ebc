@@ -1,0 +1,5 @@
+package com.mouritech.hibernateexample;
+
+public class Student {
+
+}

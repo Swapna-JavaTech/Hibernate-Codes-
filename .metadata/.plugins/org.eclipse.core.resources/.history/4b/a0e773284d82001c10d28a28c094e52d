@@ -1,0 +1,14 @@
+package com.mouritech.employeemanagement.dao;
+
+import java.util.List;
+
+import com.mouritech.employeemanagement.web.Employee;
+
+public class EmployeeDao {
+
+	public List<Employee> getAllEmployees() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,4 @@
+INDEX VERSION 1.4+D:\Moritech\Java Full Stack\Class Notes\Java\Hibernate Example Programs\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+329220968.index
+1091411013.index
+3833508784.index

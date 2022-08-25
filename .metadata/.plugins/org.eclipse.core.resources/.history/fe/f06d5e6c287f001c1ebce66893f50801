@@ -1,0 +1,22 @@
+package com.mouritech.crudwithhibernate.service;
+
+import com.mouritech.crudwithhibernate.dao.EmployeeDao;
+
+public class EmployeeService {
+	
+	EmployeeDao empdao = new EmployeeDao();
+
+	public void employeeSave() {
+		empdao.employeeSave();
+		
+		
+	}
+
+	public void getAllEmployees() {
+		
+		empdao.getAllEmployees();
+	}
+	
+	
+
+}

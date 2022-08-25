@@ -1,0 +1,25 @@
+package com.mouritech.crudwithhibernate;
+
+import java.util.Scanner;
+
+public class EmployeeCRUDExample {
+
+	public static void main(String[] args) {
+		char ch = 'y';
+		String transaction;
+		Scanner sc = new Scanner(System.in);
+		while(ch == 'y') {
+			System.out.println();
+			switch (transaction) {
+			case value:
+				
+				break;
+
+			default:
+				break;
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,50 @@
+package com.mouritech.manytomanyexample.entity;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "project_data")
+public class Project {
+	
+	@Id
+	@GeneratedValue
+	@Column(name = "project_id")
+	private Long projectId;
+	
+	@Column(name="projecttitle")
+	private String projectName;
+	
+	@ManyToMany(mappedBy = "projects",cascade = {CascadeType.ALL})
+	private Set<Employee> employees = new HashSet<Employee>();
+	
+	
+	public Project() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public Project(Long projectId, String projectName, Set<Employee> employees) {
+		super();
+		this.projectId = projectId;
+		this.projectName = projectName;
+		this.employees = employees;
+	}
+	
+	public Project(String projectName, Set<Employee> employees) {
+		super();
+		//this.projectId = projectId;
+		this.projectName = projectName;
+		this.employees = employees;
+	}
+	
+	
+
+}
